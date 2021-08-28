@@ -4,9 +4,17 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>About Page</title>
+  <title>Profile Page</title>
 </head>
 <body>
-  <h1>This is About Page </h1>
+  <h1>Welcome! Mr <%=name> </h1>
+  <h3>Email : <%= data.email> </h3>
+  <h3>Email : <%= data.address> </h3>
+  <ul>
+    <% data.skills.forEach(function(){ %>
+      <li><%=item%></li>
+
+    % })%>
+  </ul>
 </body>
 </html>
